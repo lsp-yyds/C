@@ -1,6 +1,12 @@
-#include <iostream>
-
+#include <stdio.h>
+int fun(int x)
+{
+    return (x+5);
+}
+  
+int y = fun(20);
+  
 int main()
 {
-	std::cout << "This program returns the integer value 0\n";
+    printf("%d ", y);
 }

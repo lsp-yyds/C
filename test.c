@@ -1,9 +1,15 @@
 #include <stdio.h>
+#include <limits.h>
 
-int main(int argc, char const *argv[])
-{
-    int i = 0, j = 1, k = -1;
-    double x = 0.5, y = 0.0;
-    printf("%d", 1|1);
+int main() {
+    unsigned int x=-1;
+    int y;
+    y = ~0;
+    if(x == y)
+        printf("same\n");
+        if(x==INT_MAX) printf("INT_MAX\n");
+        if(x==UINT_MAX) printf("UINT_MAX\n");
+    else
+        printf("not same");
     return 0;
 }
